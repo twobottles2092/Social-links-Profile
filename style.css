@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --offblack: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+#myavatar {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url(assets/images/mypic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.info {
+    height: 120px;
+    text-align: center;
+    margin: 30px 0;   
+}
+.info h1,a,p{
+    color: var(--White);
+}
+.info h1,h2 {
+    line-height: 1.5;
+}
+.info h2 {
+    color: var(--Green);
+}
+.info p {
+    font-size: 16px;
+    line-height: 3;
+}
+body  {
+    width: auto;
+    background-color: var(--offblack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#container {
+    background-color: var(--DarkGrey); 
+    height: 800px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+.social {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+.social button{
+    height: 70px;
+    width: 397px;
+    border: none;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 3;
+    border-radius: 10px;
+    background-color: var(--Grey);
+    font-weight: bolder;
+    font-size: auto;
+    font-size: 25px;
+    color: white;   
+}
+.social button:hover {
+    background-color: var(--Green);
+    cursor: pointer;
+    color: black;
+    transition: blue 0.3s;
+}
+.social button:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.attribution { 
+    
+    font-size: 11px; text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: ;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+@media  (max-width:375px) {
+    #container{
+        background-color: rgb(50, 121, 97);
+        width: 350px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+    .social button{
+        width: 300px;
+        font-size: 20px;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+}
+@media (max-width:323px) {
+    #container{
+        background-color: rgb(17, 74, 180);
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    .info p {
+        font-size: 13px;
+    }
+    .social button{
+        width: 275px;
+        font-size: 20px;
+    }
+}
